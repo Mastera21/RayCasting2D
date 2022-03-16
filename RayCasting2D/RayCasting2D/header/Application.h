@@ -1,14 +1,15 @@
 #pragma once
-
 //C system headers
 
 //C++ system headers
- 
+#include <vector>
 //Other libraries headers
-#include <SFML/Graphics.hpp>
+ 
 //Own components headers
-
+#include "../header/Wall.h"
 //Forward declarations
+
+#define numWalls 4
 
 class Application{
 public:
@@ -32,6 +33,8 @@ private:
 	bool requestForExit(sf::Event& e);
 private:
 	sf::RenderWindow _window;
-	sf::CircleShape _shape;
+private:
+	std::vector<Wall> _walls{};
+
 };
 

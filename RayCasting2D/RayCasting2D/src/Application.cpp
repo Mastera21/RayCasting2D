@@ -12,9 +12,15 @@ int32_t Application::init() {
 	_window.create(sf::VideoMode(1000, 800), "RayCasting2D");
 	_window.setFramerateLimit(60);
 
-	_shape.setRadius(10.f);
-	_shape.setFillColor(sf::Color::Green);
-	_shape.setPosition(_window.getSize().x / 2, _window.getSize().y / 2);
+	for (int i = 0; i < numWalls; i++) {
+		Wall wall;
+		_walls.push_back(wall);
+	}
+	_walls[0].setPos(sf::Vector2f(150, 300), sf::Vector2f(200, 100));
+	_walls[1].setPos(sf::Vector2f(500, 300), sf::Vector2f(500, 400));
+	_walls[2].setPos(sf::Vector2f(700, 200), sf::Vector2f(500, 600));
+	_walls[3].setPos(sf::Vector2f(300, 700), sf::Vector2f(300, 300));
+
 	return EXIT_SUCCESS;
 }
 void Application::Irun() {
@@ -66,6 +72,8 @@ void Application::handleEvent() {
 }
 void Application::draw() {
 	_window.clear();
-	_window.draw(_shape);
+	for (int i = 0; i < _walls.size(); i++) {
+		_walls[i].draw(_window);
+	}
 	_window.display();
 }
