@@ -1,20 +1,15 @@
-#include <SFML/Graphics.hpp>
+//C system headers
 
+//C++ system headers
+
+//Other libraries headers
+
+//Own components headers
+
+#include "../header/Application.h"
 int main(){
-    sf::RenderWindow window(sf::VideoMode(200, 200), "RayCasting2D");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen()){
-        sf::Event event;
-        while (window.pollEvent(event)){
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+    
+    Application::run();
 
     return 0;
 }
