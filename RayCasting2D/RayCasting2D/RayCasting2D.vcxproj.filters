@@ -12,9 +12,15 @@
     <ClInclude Include="header\Application.h">
       <Filter>header</Filter>
     </ClInclude>
+    <ClInclude Include="header\Wall.h">
+      <Filter>header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wall.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
