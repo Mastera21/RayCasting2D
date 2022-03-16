@@ -1,0 +1,22 @@
+﻿  Application.cpp
+D:\GitHub Repositorys\RayCasting2D\RayCasting2D\RayCasting2D\src\Application.cpp(86,93): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\GitHub Repositorys\RayCasting2D\RayCasting2D\RayCasting2D\src\Application.cpp(86,58): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  main.cpp
+  Generating Code...
+  RayCasting2D.vcxproj -> D:\GitHub Repositorys\RayCasting2D\RayCasting2D\build\bin\Release-windows-x86_64\RayCasting2D\RayCasting2D.exe
