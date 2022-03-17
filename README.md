@@ -25,3 +25,10 @@ If someting happened with project files or cant open project files type "cmd" on
 -Lua.\
 -Premake (Link for Primake: https://premake.github.io/). \
 -SFML (Link for SFML: https://www.sfml-dev.org/).
+
+## Preview:
+1.
+![Screenshot 2022-03-17 22-45-51](https://user-images.githubusercontent.com/68899725/158892377-eb662bb7-396b-4e21-8de4-cb8168e08f40.png)
+
+2.
+![Screenshot 2022-03-17 22-46-03](https://user-images.githubusercontent.com/68899725/158892471-3fd3424d-8a9d-49ca-8084-f58d71d555b8.png)
