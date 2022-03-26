@@ -12,20 +12,22 @@ int32_t Application::init() {
 	_window.create(sf::VideoMode(1000, 800), "RayCasting2D");
 	_window.setFramerateLimit(60);
 
+	_walls.reserve(numWalls);
 	for (int i = 0; i < numWalls; i++) {
 		Wall wall;
-		_walls.push_back(wall);
+		_walls.emplace_back(wall);
 	}
 	_walls[0].setPos(sf::Vector2f(150, 300), sf::Vector2f(200, 100));
 	_walls[1].setPos(sf::Vector2f(500, 300), sf::Vector2f(500, 400));
 	_walls[2].setPos(sf::Vector2f(700, 200), sf::Vector2f(500, 600));
 	_walls[3].setPos(sf::Vector2f(300, 700), sf::Vector2f(300, 300));
 
+	_rays.reserve(lines);
 	const float step = 1.f / lines;
 	for (float i = 0; i < lines; i += step) {
 		const float x = cos(i);
 		const float y = sin(i);
-		_rays.push_back(Line(x, y));
+		_rays.emplace_back(Line(x, y));
 	}
 
 	_rayLines.setPrimitiveType(sf::PrimitiveType::Lines);
@@ -82,7 +84,7 @@ void Application::deinit() {
 	_rays.clear();
 	_rayLines.clear();
 }
-void Application::handleEvent() {
+inline void Application::handleEvent() {
 	_mousePos = sf::Vector2f(sf::Mouse::getPosition(_window).x, sf::Mouse::getPosition(_window).y);
 	_rayLines[0].position = _mousePos;
 }

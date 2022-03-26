@@ -13,7 +13,7 @@ Line::Line(const float& x, const float& y) {
 void Line::reset(const sf::Vector2f& mousePos) {
 	_positionPoint = mousePos + _relativePositionPoint;
 }
-float Line::position(const sf::Vector2f& x1, const sf::Vector2f& x2, const sf::Vector2f& x3, const sf::Vector2f& x4) {
+inline float Line::position(const sf::Vector2f& x1, const sf::Vector2f& x2, const sf::Vector2f& x3, const sf::Vector2f& x4) {
 	return (x1.x - x2.x) * (x3.y - x4.y) - (x1.y - x2.y) * (x3.x - x4.x);
 }
 void Line::checkForWall(const sf::Vector2f& startPosWall, const sf::Vector2f& endPosWall, const sf::Vector2f& mousePos) {

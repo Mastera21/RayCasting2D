@@ -32,6 +32,6 @@ project "RayCasting2D"
 
     filter { "configurations:Release" }
         runtime "Release"
-        optimize "on"
+        optimize "Speed"
         
         links { "sfml-audio-s.lib", "sfml-graphics-s.lib", "sfml-network-s.lib", "sfml-system-s.lib", "sfml-window-s.lib" }
