@@ -17,8 +17,4 @@ D:\GitHub Repositorys\RayCasting2D\RayCasting2D\RayCasting2D\src\Application.cpp
           [
               T=float
           ]
-  Line.cpp
-  Wall.cpp
-  main.cpp
-  Generating Code...
   RayCasting2D.vcxproj -> D:\GitHub Repositorys\RayCasting2D\RayCasting2D\build\bin\Release-windows-x86_64\RayCasting2D\RayCasting2D.exe

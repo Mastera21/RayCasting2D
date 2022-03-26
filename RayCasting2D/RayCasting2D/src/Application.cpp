@@ -27,7 +27,7 @@ int32_t Application::init() {
 	for (float i = 0; i < lines; i += step) {
 		const float x = cos(i);
 		const float y = sin(i);
-		_rays.emplace_back(Line(x, y));
+		_rays.emplace_back(x, y);
 	}
 
 	_rayLines.setPrimitiveType(sf::PrimitiveType::Lines);
