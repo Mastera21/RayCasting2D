@@ -1,7 +1,7 @@
 # RayCasting2D
 
 This is simple ray casting 2d.\
-The idea was inspired by "The Coding Train" link for video: https://www.youtube.com/watch?v=TOEi6T2mtHo&t=814s
+The idea was inspired by "The Coding Train" link for the video: https://www.youtube.com/watch?v=TOEi6T2mtHo&t=814s
 
 ## Development:
 -Developed on Windows 10.\
@@ -9,7 +9,7 @@ The idea was inspired by "The Coding Train" link for video: https://www.youtube.
 
 ## Run project:
 If you want to develop the project open RayCasting2D folder in main directory and open RayCasting2D.sln.\
-To see wath is in project download and open (.exe) file, path is -> build\bin\Release-windows-x86_64\RayCasting2D\RayCasting2D.exe.\
+To see what is in the project download and open (.exe) file, path is -> build\bin\Release-windows-x86_64\RayCasting2D\RayCasting2D.exe.\
 \
 If someting happened with project files or cant open project files type "cmd" on path directory and type the following commands:
 
